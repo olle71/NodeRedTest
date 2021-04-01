@@ -1,1 +1,52 @@
-[]
+[
+    {
+        "id": "59edc88d.336098",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "59ff2a1.fa600d4",
+        "type": "http in",
+        "z": "59edc88d.336098",
+        "name": "",
+        "url": "/hello",
+        "method": "get",
+        "swaggerDoc": "",
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "54c1e70d.ab3e18"
+            ]
+        ]
+    },
+    {
+        "id": "54c1e70d.ab3e18",
+        "type": "template",
+        "z": "59edc88d.336098",
+        "name": "page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head></head>\n    <body>\n        <h1>Hello World!</h1>\n    </body>\n</html>",
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "266c286f.d993d8"
+            ]
+        ]
+    },
+    {
+        "id": "266c286f.d993d8",
+        "type": "http response",
+        "z": "59edc88d.336098",
+        "name": "",
+        "x": 630,
+        "y": 160,
+        "wires": []
+    }
+]
