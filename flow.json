@@ -36,7 +36,8 @@
         "y": 160,
         "wires": [
             [
-                "266c286f.d993d8"
+                "266c286f.d993d8",
+                "8425345f.5d0e08"
             ]
         ]
     },
@@ -47,6 +48,22 @@
         "name": "",
         "x": 630,
         "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8425345f.5d0e08",
+        "type": "debug",
+        "z": "59edc88d.336098",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 100,
         "wires": []
     }
 ]
